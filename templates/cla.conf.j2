@@ -1,7 +1,7 @@
 [general]
 state_file = {{ cla_state_file }}
 
-{% for log in cla_logs %}
+{% for log in cla_logs -%}
 [{{ log.name }}]
 file = {{ log.file }}
 log_group_name = {{ log.log_group_name }}

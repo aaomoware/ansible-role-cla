@@ -8,12 +8,16 @@
   template:
     src: "{{ cla_config_file }}.j2"
     dest: "{{ cla_base_dir }}/{{ cla_config_file }}"
+  notify: restart_cla
+  ignore_errors: true
 
 - name: initialize ca
   shell: ./awslogs-agent-setup.py -n -r {{ cla_region }} -c {{ cla_config_file }}
   args:
     chdir: "{{ cla_base_dir }}"
+    creates: "{{ cla_state_file }}"
   register: cla_agent_run
 
 - debug:
     msg: "{{ cla_agent_run.stdout }}"
+  when: cla_agent_run|changed

@@ -1,4 +1,4 @@
-- name: cla restart
+- name: restart_cla
   service:
     name: awslogs
     state: restarted
