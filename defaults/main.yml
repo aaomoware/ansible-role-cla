@@ -1,0 +1,17 @@
+cla_region: eu-west-1
+cla_base_dir: /usr/src
+cla_state_file: /var/awslogs/state/agent-state
+cla_environment: test
+cla_config_file: cla.conf
+
+cla_logs:
+  - name: ntp-access-log
+    file: /var/log/apache2/ntp-access.log
+    log_group_name: ntp-logs
+    log_stream_name: ntp-access-log
+    datetime_format: '%b %d %H:%M:%S'
+  - name: ntp-error-log
+    file: /var/log/apache2/ntp-error-log
+    log_group_name: ntp-logs
+    log_stream_name: ntp-access-log
+    datetime_format: '%b %d %H:%M:%S'

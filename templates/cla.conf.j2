@@ -1,0 +1,10 @@
+[general]
+state_file = {{ cla_state_file }}
+
+{% for log in cla_logs %}
+[{{ log.name }}]
+file = {{ log.file }}
+log_group_name = {{ log.log_group_name }}
+log_stream_name = {{ log.log_stream_name }}
+datetime_format = {{ log.datetime_format }}
+{% endfor %}

@@ -1,0 +1,5 @@
+- name: cla restart
+  service:
+    name: awslogs
+    state: restarted
+    enabled: yes

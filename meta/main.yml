@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: A A Omoware
+  description: Install and Configure the CloudWatch Logs Agent
+  company: @AAOmoware
+  license: Apache License 2.0
+  min_ansibe_version: 2.2
+  platforms:
+  - name: All Nix
+    versions:
+    - all_nix
+  categories:
+  - monitoring
