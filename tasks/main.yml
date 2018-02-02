@@ -1,5 +1,5 @@
 - include: reinstall.yml
-  when: {{ reinstall | default(false) }}
+  when: "{{ reinstall | default(false) }}"
 
 - name: get awslogs-agent-setup.py
   get_url:
