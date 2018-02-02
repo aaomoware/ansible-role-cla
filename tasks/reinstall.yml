@@ -1,0 +1,8 @@
+- name: reinstall
+  file:
+    path: "{{ item }}"
+    state: absent
+  with_items:
+    - /var/awslogs
+    - "{{ cla_base_dir }}/{{ cla_config_file }}"
+    - "{{ cla_base_dir }}/awslogs-agent-setup.py"
