@@ -1,3 +1,6 @@
+- include: reinstall.yml
+  when: {{ reinstall | default(false) }}
+
 - name: get awslogs-agent-setup.py
   get_url:
     url: "{{ cla_script }}"
