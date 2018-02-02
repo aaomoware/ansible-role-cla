@@ -12,8 +12,8 @@
 - name: install & configure cla
   shell: ./awslogs-agent-setup.py -n -r {{ cla_region }} -c {{ cla_config_file }}
   args:
-    chdir: {{ cla_base_dir }}
+    chdir: "{{ cla_base_dir }}"
   register: cla_agent_run
 
 - debug:
-    msg: {{cla_agent_run.stdout}}
+    msg: "{{ cla_agent_run.stdout }}"
