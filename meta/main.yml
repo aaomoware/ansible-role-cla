@@ -6,8 +6,8 @@ galaxy_info:
   license: Apache License 2.0
   min_ansibe_version: 2.2
   platforms:
-  - name: All Nix
+  - name: EL
     versions:
-    - all_nix
+    - all
   categories:
   - monitoring
