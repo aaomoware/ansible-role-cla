@@ -1,4 +1,5 @@
 cla_region: eu-west-1
+cla_script: https://s3.amazonaws.com//aws-cloudwatch/downloads/latest/awslogs-agent-setup.py
 cla_base_dir: /usr/src
 cla_state_file: /var/awslogs/state/agent-state
 cla_environment: test
