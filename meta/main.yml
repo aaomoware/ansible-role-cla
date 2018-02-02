@@ -3,11 +3,18 @@ galaxy_info:
   author: A A Omoware
   description: Install and Configure the CloudWatch Logs Agent
   company: @AAOmoware
-  license: Apache License 2.0
+  license: Apache License
   min_ansibe_version: 2.2
   platforms:
   - name: EL
     versions:
-    - all
+    - 6
+    - 7
+  - name: Debian
+    versions:
+      - all
+  - name: Ubuntu
+    versions:
+      - all
   categories:
-  - monitoring
+    - monitoring
