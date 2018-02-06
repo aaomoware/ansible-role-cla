@@ -1,1 +1,1 @@
-[Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html)
+Click [here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html) for AWS [CloudWatch](https://aws.amazon.com/documentation/cloudwatch/) Logs agent installation user guide.
